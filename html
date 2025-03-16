@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer and Task List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    
+    <!-- Timer Display -->
+    <div id="timerDisplay" class="timer-display">25:00</div>
+    
+    <!-- Timer Controls -->
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    
+    <!-- Task List and Categories -->
+    <div class="task-list">
+      <h2>Task Backlog</h2>
+      
+      <div class="category-selection">
+        <label for="taskCategory">Choose Category:</label>
+        <select id="taskCategory">
+          <option value="Work">Work</option>
+          <option value="Stream">Stream</option>
+          <option value="Study">Study</option>
+          <option value="Personal">Personal</option>
+        </select>
+      </div>
+      
+      <ul id="taskList"></ul>
+      
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
